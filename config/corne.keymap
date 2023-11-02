@@ -27,7 +27,7 @@
             >;
         };
 
-        lower_layer {
+        nav_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -40,9 +40,11 @@
 &kp F1   &kp F2  &kp F3    &kp F4         &kp F5       &kp F6     &kp F7    &kp F8    &kp F9  &kp F10    &kp F11  &kp F12
                            &trans         &trans       &trans     &trans    &trans    &trans
             >;
+
+            label = "Navigation";
         };
 
-        raise_layer {
+        sym_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -55,15 +57,19 @@
 &caps_word       &trans    &trans  &trans    &trans     &trans       &kp UNDER  &kp PLUS   &kp LBRC      &kp RBRC  &kp PIPE  &trans
                                    &trans    &trans     &trans       &trans     &trans     &trans
             >;
+
+            label = "Symbols";
         };
 
-        layer_3 {
+        cfg_layer {
             bindings = <
-&none       &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
-&none       &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-                                        &none         &none         &none           &none  &none  &none
+&bootloader  &sys_reset    &none         &none         &none         &none           &none  &none  &none  &none  &sys_reset  &bootloader
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none       &none
+&none        &none         &none         &none         &none         &none           &none  &none  &none  &none  &none       &none
+                                         &none         &none         &none           &none  &none  &none
             >;
+
+            label = "Config";
         };
     };
 
