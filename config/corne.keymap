@@ -12,7 +12,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        txt_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -25,6 +25,8 @@
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V  &kp B         &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                               &kp LGUI  &mo 2  &kp RETURN    &kp SPACE  &mo 1  &kp RALT
             >;
+
+            label = "Text";
         };
 
         nav_layer {
