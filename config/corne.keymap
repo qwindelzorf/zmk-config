@@ -55,8 +55,8 @@
 
             bindings = <
 &kp ESC          &kp EXCL  &kp AT  &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTERISK  &kp LPAR  &kp RPAR  &kp DEL
-&kp LC(LA(DEL))  &trans    &trans  &trans    &kp GRAVE  &kp TILDE    &kp MINUS  &kp EQUAL  &kp LBKT      &kp RBKT  &kp BSLH  &trans
-&caps_word       &trans    &trans  &trans    &trans     &trans       &kp UNDER  &kp PLUS   &kp LBRC      &kp RBRC  &kp PIPE  &trans
+&caps_word       &trans    &trans  &trans    &kp GRAVE  &kp TILDE    &kp MINUS  &kp EQUAL  &kp LBKT      &kp RBKT  &kp BSLH  &trans
+&kp LA(LC(DEL))  &trans    &trans  &trans    &trans     &trans       &kp UNDER  &kp PLUS   &kp LBRC      &kp RBRC  &kp PIPE  &trans
                                    &trans    &trans     &trans       &trans     &trans     &trans
             >;
 
